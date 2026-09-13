@@ -1,0 +1,6 @@
+{
+  "name": "MediKiosk",
+  "description": "AI-powered clinical history-taking and patient intake platform for Indian hospitals and AYUSH institutions.",
+  "requestFramePermissions": ["microphone", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
