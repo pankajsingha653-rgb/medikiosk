@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import {
   ArrowLeft,
   Sparkles,
-  ShieldCheck,
   AlertTriangle,
   CheckCircle2,
   Printer,
@@ -10,9 +9,6 @@ import {
   Share2,
   Stethoscope,
   Clock,
-  Activity,
-  User,
-  Heart,
   Pill,
   Flower2,
   Save,

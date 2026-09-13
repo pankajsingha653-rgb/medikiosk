@@ -2,16 +2,13 @@ import { useState } from 'react';
 import {
   Mic,
   ScanLine,
-  Share2,
   ArrowRight,
   ShieldCheck,
   Stethoscope,
   Clock,
   CheckCircle2,
-  FileText,
   Activity,
   Layers,
-  Sparkles,
   HeartPulse
 } from 'lucide-react';
 import { Patient, LanguageCode } from '../../types';

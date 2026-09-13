@@ -6,13 +6,10 @@ import {
   FileCheck,
   Trash2,
   Eye,
-  CheckCircle2,
   Loader2,
   ArrowRight,
   ArrowLeft,
-  Sparkles,
-  ShieldCheck,
-  AlertCircle
+  Sparkles
 } from 'lucide-react';
 import { MedicalDocument, Patient, TimelineEvent } from '../../types';
 import { ClinicalAiService } from '../../services/ai';

@@ -2,18 +2,12 @@ import { useState } from 'react';
 import {
   Sparkles,
   ShieldCheck,
-  CheckCircle2,
   Edit3,
   AlertTriangle,
   ArrowRight,
   ArrowLeft,
   FileText,
-  Activity,
-  Heart,
-  Pill,
-  Flower2,
-  Clock,
-  Printer
+  Flower2
 } from 'lucide-react';
 import { Patient, ClinicalCase, MedicalDocument, TestResult } from '../../types';
 
@@ -21,7 +15,7 @@ interface SummaryReviewViewProps {
   patient: Patient;
   clinicalCase: ClinicalCase;
   documents: MedicalDocument[];
-  testResults: TestResult[];
+  testResults?: TestResult[];
   onConfirm: () => void;
   onEdit: () => void;
   onBack: () => void;
@@ -31,7 +25,6 @@ export function SummaryReviewView({
   patient,
   clinicalCase,
   documents,
-  testResults,
   onConfirm,
   onEdit,
   onBack

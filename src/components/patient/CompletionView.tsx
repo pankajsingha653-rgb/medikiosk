@@ -6,11 +6,7 @@ import {
   Check,
   Building2,
   Clock,
-  User,
-  ArrowRight,
-  Sparkles,
-  QrCode,
-  ShieldCheck
+  ArrowRight
 } from 'lucide-react';
 import { Patient, ClinicalCase } from '../../types';
 
@@ -20,7 +16,7 @@ interface CompletionViewProps {
   onDone: () => void;
 }
 
-export function CompletionView({ patient, clinicalCase, onDone }: CompletionViewProps) {
+export function CompletionView({ patient, onDone }: CompletionViewProps) {
   const [isPrinted, setIsPrinted] = useState(false);
   const [mobileSent, setMobileSent] = useState(false);
 

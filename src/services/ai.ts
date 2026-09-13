@@ -3,7 +3,6 @@ import { LanguageCode, SocratesHistory, ExtractedDocumentData } from '../types';
 // Speech synthesis and recognition abstraction
 export class AudioService {
   private static synth = typeof window !== 'undefined' ? window.speechSynthesis : null;
-  private static recognition: any = null;
 
   public static speak(text: string, lang: LanguageCode = 'en'): void {
     if (!this.synth) return;
@@ -146,7 +145,7 @@ export class ClinicalAiService {
   }
 
   // Simulated OCR & Clinical Entity Extraction (with realistic multi-step parsing)
-  public static async simulateOcrExtraction(documentType: string, filename: string): Promise<ExtractedDocumentData> {
+  public static async simulateOcrExtraction(documentType: string, _filename?: string): Promise<ExtractedDocumentData> {
     await new Promise(res => setTimeout(res, 2200));
 
     if (documentType === 'Prescription') {

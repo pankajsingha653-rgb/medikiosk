@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Header } from './components/common/Header';
 import { KioskBar } from './components/common/KioskBar';
 import { LandingView } from './components/patient/LandingView';
@@ -19,9 +19,7 @@ import {
   Patient,
   ClinicalCase,
   MedicalDocument,
-  LanguageCode,
-  AccessibilitySettings,
-  ConsultationType
+  AccessibilitySettings
 } from './types';
 import { db } from './services/db';
 import { AudioService } from './services/ai';

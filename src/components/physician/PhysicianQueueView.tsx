@@ -6,7 +6,6 @@ import {
   Clock,
   RefreshCw,
   ChevronRight,
-  User,
   ShieldAlert
 } from 'lucide-react';
 import { Patient } from '../../types';

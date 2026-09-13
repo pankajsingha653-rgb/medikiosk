@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Flower2, Check, ArrowRight, ArrowLeft, Shield, Sparkles } from 'lucide-react';
+import { Flower2, ArrowRight, ArrowLeft, Shield } from 'lucide-react';
 import { AyushAssessment, Patient } from '../../types';
 import { db } from '../../services/db';
 

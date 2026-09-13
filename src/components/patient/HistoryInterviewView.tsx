@@ -5,12 +5,9 @@ import {
   Send,
   AlertTriangle,
   ChevronRight,
-  Sparkles,
   ArrowRight,
   ArrowLeft,
-  Volume2,
   CheckCircle2,
-  Stethoscope,
   Plus,
   Trash2,
   ShieldAlert
@@ -106,7 +103,7 @@ export function HistoryInterviewView({
   const [newConditionInput, setNewConditionInput] = useState('');
 
   // Past Surgeries
-  const [pastSurgeries, setPastSurgeries] = useState<PastSurgery[]>(
+  const [pastSurgeries] = useState<PastSurgery[]>(
     existingCase?.pastSurgicalHistory || []
   );
 
@@ -140,7 +137,7 @@ export function HistoryInterviewView({
   );
 
   // Review of Systems
-  const [ros, setRos] = useState<ReviewOfSystems>(
+  const [ros] = useState<ReviewOfSystems>(
     existingCase?.reviewOfSystems || {
       general: ['Fatigue', 'Cold sweating'],
       cardiovascular: ['Chest heaviness', 'Palpitations'],
@@ -210,7 +207,7 @@ export function HistoryInterviewView({
           setInputText(transcript);
           handlePatientSubmit(transcript);
         },
-        err => {
+        () => {
           setIsListening(false);
         }
       );

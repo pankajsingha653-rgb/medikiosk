@@ -10,8 +10,7 @@ import {
   Users,
   Building2,
   Menu,
-  X,
-  Sparkles
+  X
 } from 'lucide-react';
 import { LanguageCode } from '../../types';
 

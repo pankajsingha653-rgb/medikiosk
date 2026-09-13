@@ -1,4 +1,4 @@
-import { Calendar, FileText, Activity, Stethoscope, Pill } from 'lucide-react';
+import { Activity, Stethoscope, Pill } from 'lucide-react';
 import { TimelineEvent } from '../../types';
 
 interface TimelineViewProps {

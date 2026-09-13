@@ -1,12 +1,12 @@
-import { Sparkles, AlertTriangle, ShieldCheck, CheckCircle2, ChevronRight } from 'lucide-react';
+import { AlertTriangle, ChevronRight } from 'lucide-react';
 import { ClinicalCase, Patient } from '../../types';
 
 interface DifferentialAssistanceProps {
-  patient: Patient;
+  patient?: Patient;
   clinicalCase?: ClinicalCase;
 }
 
-export function DifferentialAssistanceView({ patient, clinicalCase }: DifferentialAssistanceProps) {
+export function DifferentialAssistanceView({ clinicalCase }: DifferentialAssistanceProps) {
   const isChestPain =
     clinicalCase?.chiefComplaints?.[0]?.complaint.toLowerCase().includes('chest') ||
     clinicalCase?.socrates?.site?.toLowerCase().includes('retrosternal') ||

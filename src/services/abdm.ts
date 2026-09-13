@@ -115,7 +115,7 @@ export class AbdmFhirBridge {
   }
 
   // Push to Personal Health Record (PHR) sandbox endpoint
-  public static async pushToPhr(abhaId: string, bundle: any): Promise<{ success: boolean; transactionId: string }> {
+  public static async pushToPhr(_abhaId: string, _bundle: any): Promise<{ success: boolean; transactionId: string }> {
     // Sandboxed ABDM Milestone 2 / 3 simulation
     await new Promise(res => setTimeout(res, 500));
     return {

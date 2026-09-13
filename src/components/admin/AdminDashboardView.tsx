@@ -5,14 +5,8 @@ import {
   Users,
   Clock,
   CheckCircle2,
-  HardDrive,
-  Activity,
-  ShieldCheck,
-  Building2,
   FileCode,
   Radio,
-  Sliders,
-  Sparkles,
   RefreshCw
 } from 'lucide-react';
 import { db } from '../../services/db';
@@ -38,7 +32,6 @@ export function AdminDashboardView() {
   const totalPatients = patients.length;
   const completed = patients.filter(p => p.status === 'completed').length;
   const waiting = patients.filter(p => p.status === 'waiting').length;
-  const inConsultation = patients.filter(p => p.status === 'in_consultation').length;
   const redFlagCount = redFlags.filter(r => r.status === 'active').length;
 
   const handleAcknowledgeRedFlag = (alertId: string) => {

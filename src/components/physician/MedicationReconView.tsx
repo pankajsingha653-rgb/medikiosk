@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowRightLeft, AlertTriangle, CheckCircle2, ShieldAlert } from 'lucide-react';
+import { ArrowRightLeft, AlertTriangle } from 'lucide-react';
 import { Patient, ClinicalCase } from '../../types';
 
 interface MedicationReconProps {
@@ -20,7 +20,7 @@ interface ReconRow {
   decision: 'continue' | 'modify' | 'discontinue';
 }
 
-export function MedicationReconView({ patient }: MedicationReconProps) {
+export function MedicationReconView(_props: MedicationReconProps) {
   const [rows, setRows] = useState<ReconRow[]>([
     {
       id: 'm1',
