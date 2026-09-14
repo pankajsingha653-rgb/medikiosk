@@ -94,9 +94,6 @@ export function LandingView({
               <span className="flex items-center gap-1.5 font-medium">
                 <CheckCircle2 className="w-4 h-4 text-[#6C3FC5]" /> Hindi, Bengali, Nepali & English
               </span>
-              <span className="flex items-center gap-1.5 font-medium">
-                <ShieldCheck className="w-4 h-4 text-[#6C3FC5]" /> Verified by Doctor
-              </span>
             </div>
           </div>
 
